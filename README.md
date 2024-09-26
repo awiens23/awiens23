@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="mystyle.css">
 <h1>Addison Wiens Website</h1>
 </head>
 <body>
