@@ -1,7 +1,7 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Addison Wiens Website</title>
+<h1>Addison Wiens Website</h1>
 </head>
 <body>
 
