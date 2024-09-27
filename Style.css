@@ -91,3 +91,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 .navbar a:hover {
     background-color: lightgray; /* Background change on hover */
 }
+
+.profile-picture {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Ensures the picture remains square before rounding */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the whole circle */
+    position: absolute;
+    right: 20px; /* Aligns the image to the right */
+    top: 20px; /* Adjust the vertical position */
+    border: 3px solid #333; /* Optional: Adds a border to the image */
+}
