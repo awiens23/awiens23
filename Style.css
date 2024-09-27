@@ -21,7 +21,7 @@
 p {
 
 	margin: 0px;
-	padding: 0px;
+	padding-bottom: 5px;
 	font-family: Tahoma, sans-serif;
 
 }
@@ -36,7 +36,7 @@ h1 {
 h2 { 
 
 	margin:0px;
-	margin-bottom: 5px;
+	padding-bottom: 5px;
 	font-family: Tahoma, sans-serif;
 
 }
@@ -44,16 +44,14 @@ h2 {
 h3 {
 
 	margin:0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+        padding-bottom: 5px;
         font-family: Tahoma, sans-serif;
 }
 
 h4 {
 
 	margin:0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+        padding-bottom: 5px;
         font-family: Tahoma, sans-serif;
 }
 
