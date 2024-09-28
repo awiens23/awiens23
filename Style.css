@@ -153,13 +153,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 }
 
 .side-by-side:first-child {
-    height: 50px;                
-    width: 100px;
+    height: 24%;                
+    width: 48%;
 }
 
 .side-by-side:last-child {
-    width: 50px;
-    height: 100px:               
+    width: 24%;
+    height: 48%:               
 }
 
 
