@@ -154,11 +154,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 
 .side-by-side:first-child {
     height: auto;               
-    width: 10px;
+    width: 48%;
 }
 
 .side-by-side:last-child {
-    width: 10px;
+    width: 24%;
     height: auto;              
 }
 
