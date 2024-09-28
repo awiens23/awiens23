@@ -119,3 +119,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
     margin-bottom: 10px; /* Adds space below the image */
     border: 3px solid #333; /* Optional: Adds a border to the image */
 }
+
+.project-picture {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Ensures the picture remains square before rounding */
+    float: right; /* Floats the image to the right inside the content box */
+    margin-left: 20px; /* Adds space between the image and the text */
+    margin-bottom: 10px; /* Adds space below the image */
+    border: 3px solid #333; /* Optional: Adds a border to the image */
+}
