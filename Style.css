@@ -148,18 +148,23 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 }
 
 .side-by-side {
-    border: 2px solid #333;       /* Optional: Add a border */
-    object-fit: cover;            /* Maintain aspect ratio without stretching */
+    width: 48%;                    /* Set width to make them fit side by side */
+    border: 2px solid #333;        /* Optional: Add a border */
+    max-width: 100%;               /* Prevents image from being larger than the column */
+    object-fit: cover;             /* Maintain aspect ratio without stretching */
 }
 
-.side-by-side:first-child {
-    height: 10px;               
-    width: 20px;
+/* Adjust the height for images directly */
+.image-container img {
+    width: 100%;                   /* Makes the image fill the column */
 }
 
-.side-by-side:last-child {
-    width: 10px;
-    height: 20px;              
+.image-container img:first-of-type {
+    max-height: 50px;             /* Set maximum height for the first image */
+}
+
+.image-container img:last-of-type {
+    max-height: 100pxpx;             /* Set maximum height for the second image */
 }
 
 
