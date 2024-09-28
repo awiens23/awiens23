@@ -136,14 +136,22 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
     border: 3px solid #333; /* Optional: Adds a border to the image */
 }
 
+
+
 .image-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    display: flex;                /* Enables Flexbox for images */
+    justify-content: space-between; /* Space between the images */
+    margin-top: 20px;             /* Space above the images */
+}
+
+.side-by-side {
+    width: 48%;                   /* Set width to make them fit side by side */
+    height: auto;                 /* Maintain aspect ratio */
+    border: 2px solid #333;        /* Optional: Add a border */
 }
 
 
-.project-picture, .side-by-side {
+.project-picture {
     width: 100%;                /* Make images take up the entire column width */
     height: auto;               /* Maintain aspect ratio */
     margin-bottom: 10px;        /* Adds space between images *
