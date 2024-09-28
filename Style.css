@@ -86,10 +86,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 }
 
 .image-column {
-    flex: 1;                      /* Smaller column for images */
+    flex: 1;                    
     display: flex;
-    justify-content: center;       /* Center the images horizontally */
-    align-items: flex-start;       /* Align images at the top (start) */
+    flex-direction: column;      /* Align images vertically */
+    align-items: flex-start;     /* Align images at the top of the column */
+    height: auto;                /* Allow height to adjust based on content */
+    margin: 0;                  /* Remove margin */
+    padding: 0;                 /* Remove padding */
 }
 
 .navbar {
