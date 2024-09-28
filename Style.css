@@ -160,11 +160,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 }
 
 .image-container img:first-of-type {
-    max-height: 50px;             /* Set maximum height for the first image */
+    max-height: 48%;             /* Set maximum height for the first image */
 }
 
 .image-container img:last-of-type {
-    max-height: 100pxpx;             /* Set maximum height for the second image */
+    max-height: 24%;             /* Set maximum height for the second image */
 }
 
 
