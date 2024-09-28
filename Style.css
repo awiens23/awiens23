@@ -66,14 +66,30 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 }
 
 .content-box {
-    display: flex;              /* Enables Flexbox layout */
-    flex-direction: row;        /* Aligns children horizontally (side by side) */
     background-color: white;     
     border: 2px solid navy;      
     padding: 20px;               
     margin: 20px;            
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
     font-family: Tahoma, sans-serif;
+}
+
+.row {
+    display: flex;                /* Enables Flexbox for each row */
+    flex-direction: row;          /* Makes text and images side by side */
+    margin-bottom: 20px;          /* Adds space between rows */
+}
+
+.text-column {
+    flex: 3;                      /* Makes the text column larger */
+    margin-right: 20px;            /* Adds space between text and images */
+}
+
+.image-column {
+    flex: 1;                      /* Smaller column for images */
+    display: flex;
+    justify-content: center;       /* Center the images horizontally */
+    align-items: flex-start;       /* Align images at the top (start) */
 }
 
 .navbar {
@@ -126,10 +142,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
     width: 100%;
 }
 
+
 .project-picture, .side-by-side {
     width: 100%;                /* Make images take up the entire column width */
     height: auto;               /* Maintain aspect ratio */
-    margin-bottom: 10px;        /* Adds space between images */
+    margin-bottom: 10px;        /* Adds space between images *
+    border: 3px solid #333;        /* Optional: Add a border */
 }
 
 .image-column {
