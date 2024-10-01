@@ -188,34 +188,27 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
     display: flex;                /* Enables Flexbox for each row */
     flex-direction: row;          /* Makes text and images side by side */
     margin-bottom: 20px;       
-    align-items: center;   /* Adds space between rows */
+    align-items: center;          /* Aligns items vertically in the row */
 }
 
 .baking1pic {
-
-    width: 80%;                /* Make images take up the entire column width */
-    height: auto;               /* Maintain aspect ratio */
-    margin-bottom: 10px;        /* Adds space between images *
-    border: 3px solid #333;        /* Optional: Add a border */
-
+    width: 80%;                   /* Make images take up most of the column width */
+    height: auto;                 /* Maintain aspect ratio */
+    margin-bottom: 10px;          /* Adds space between images */
+    border: 3px solid #333;       /* Optional: Add a border */
 }
 
-
 .baking2pic {
-
-    width: 45%;                /* Make images take up the entire column width */
-    height: auto;               /* Maintain aspect ratio */
-    margin-bottom: 10px;        /* Adds space between images *
-    border: 3px solid #333;        /* Optional: Add a border */
-
+    width: 45%;                   /* Make images take up half of the column width */
+    height: auto;                 /* Maintain aspect ratio */
+    margin-bottom: 10px;          /* Adds space between images */
+    border: 3px solid #333;       /* Optional: Add a border */
 }
 
 .baking3pic {
-
-    width: 3%;                /* Make images take up the entire column width */
-    height: auto;               /* Maintain aspect ratio */
-    margin-bottom: 10px;        /* Adds space between images *
-    border: 3px solid #333;        /* Optional: Add a border */
-
+    width: 30%;                    /* Make images take up a small portion of the column width */
+    height: auto;                 /* Maintain aspect ratio */
+    margin-bottom: 10px;          /* Adds space between images */
+    border: 3px solid #333;       /* Optional: Add a border */
 }
 
