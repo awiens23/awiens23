@@ -149,20 +149,20 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 
 .side-by-side-1 {
     width: 60%;
-    height: 18%                    /* Set width to make them fit side by side */
-    border: 2px solid #333;        /* Optional: Add a border */
-    max-width: 100%;               /* Prevents image from being larger than the column */
-    object-fit: cover;   
-    align-items: center;          /* Maintain aspect ratio without stretching */
+    height: 18%;                    /* Set height with a semicolon */
+    border: 3px solid #333;          /* Add border */
+    max-width: 100%;                 /* Prevent image from being larger than the column */
+    object-fit: cover;               /* Maintain aspect ratio without stretching */
+    align-items: center;
 }
 
 .side-by-side-2 {
-    width: 40%;        
-    height: 48%            /* Set width to make them fit side by side */
-    border: 2px solid #333;        /* Optional: Add a border */
-    max-width: 100%;               /* Prevents image from being larger than the column */
-    object-fit: cover;   
-    align-items: center;          /* Maintain aspect ratio without stretching */
+    width: 40%;
+    height: 48%;                    /* Set height with a semicolon */
+    border: 3px solid #333;          /* Add border */
+    max-width: 100%;                 /* Prevent image from being larger than the column */
+    object-fit: cover;               /* Maintain aspect ratio without stretching */
+    align-items: center;
 }
 
 .project-picture {
