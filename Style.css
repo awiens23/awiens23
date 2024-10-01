@@ -215,9 +215,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 .image-container-baking {
     display: flex;                /* Enables Flexbox for images */
     flex-direction: row;          /* Place images side by side */
+    justify-content: center;      /* Center the images horizontally */
+    margin-bottom: 10px;          /* Add space below the images */
 }
-
-
 
 .baking-row p {
     margin-top: 10px;             /* Add space between the images and text */
@@ -225,3 +225,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
     text-align: center;           /* Center-align the text */
 }
 
+
+.baking3pic:last-child {
+    margin-right: 0;              /* Remove the margin on the last image */
+}
+
+.baking-text {
+    margin-top: 10px;             /* Add space between images and text */
+    font-size: 16px;              /* Adjust font size if needed */
+    text-align: center;           /* Center-align the text */
+}
