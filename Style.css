@@ -212,7 +212,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox=
 
 .baking3pic {
 
-    width: 30%;                /* Make images take up the entire column width */
+    width: 3%;                /* Make images take up the entire column width */
     height: auto;               /* Maintain aspect ratio */
     margin-bottom: 10px;        /* Adds space between images *
     border: 3px solid #333;        /* Optional: Add a border */
