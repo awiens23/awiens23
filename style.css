@@ -954,6 +954,11 @@ a:hover {
   gap: 2rem;
   align-items: stretch;
   margin-bottom: 2rem;
+  min-width: 0;
+}
+
+.system-model-grid > * {
+  min-width: 0;
 }
 
 @media (max-width: 768px) {
@@ -978,12 +983,46 @@ a:hover {
   display: block;
   margin: 0 auto;
   border-radius: 12px;
+  box-sizing: border-box;
 }
 
 .model-card figcaption {
   margin-top: 0.85rem;
   color: var(--accent-2);
   font-size: 0.9rem;
+}
+
+media (max-width: 768px) {
+  .system-model-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .model-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.75rem;
+  }
+
+  .model-card img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-table {
+    font-size: 0.8rem;
+  }
+
+  .tech-table th,
+  .tech-table td {
+    padding: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .model-card {
+    padding: 0.75rem;
+  }
 }
 
 .results-highlight {
@@ -1227,24 +1266,38 @@ html {
 
 .back-to-top {
   position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--accent-1);
-  color: white;
+  right: 1rem;
+  bottom: 1rem;
+
+  width: 52px;
+  height: 52px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: var(--accent-1);
+  color: #fff !important;
+
+  border-radius: 50%;
   text-decoration: none;
-  font-size: 1.4rem;
+
+  font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1;
+
   box-shadow: 0 8px 22px rgba(13, 1, 1, 0.18);
-  z-index: 999;
+
+  z-index: 9999;
 }
 
 .back-to-top:hover {
-  transform: translateY(-3px);
-  background: var(--accent-text);
+  background-color: var(--accent-text);
+  color: #fff;
+}
+
+.back-to-top:visited,
+.back-to-top:active,
+.back-to-top:link {
+  color: #fff;
 }
