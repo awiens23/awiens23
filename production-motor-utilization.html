@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Production-Based Motor Utilization Analytics | Addison Wiens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <h1 class="logo">Addison Wiens</h1>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <a href="projects.html" class="back-link">← Back to Projects</a>
+
+          <p class="hero-subtitle">Engineering Analytics Project</p>
+
+          <h2>Production-Based Motor Utilization Analytics</h2>
+
+          <p class="project-summary">
+            Developed a Tableau and SQL-based engineering analytics dashboard to
+            evaluate fluid production distributions across installed motor
+            classes in over 2,200 producing wells. The system integrated
+            production test data and inventory records through custom SQL
+            transformations and statistical classification logic to identify
+            potential swap candidates.
+          </p>
+
+          <p class="project-summary">
+            The dashboard was designed as a screening-level engineering
+            decision-support tool to assist in identifying potential
+            optimization opportunities and operational review candidates.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="project-feature-image">
+            <img
+              src="full_motor_dashboard.png"
+              alt="Full Tableau dashboard for motor utilization analytics"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Problem Statement</h2>
+            <p>
+              Motor allocation practices across producing wells were
+              historically difficult to evaluate at scale due to inconsistent
+              equipment configurations and fragmented production data sources.
+              Engineers lacked a centralized method for visualizing production
+              behavior relative to installed motor classes and identifying wells
+              potentially operating outside typical utilization ranges.
+            </p>
+          </div>
+
+          <div>
+            <h2>Objective</h2>
+            <p>
+              Create a data-driven analytics platform capable of integrating
+              production test and inventory data to visualize production
+              distributions across motor classes and identify wells warranting
+              further engineering review.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Methodology</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="methodology-image">
+            <img
+              src="motor_inventory_pipeline.png"
+              alt="Data pipeline diagram for motor utilization analytics"
+            />
+          </div>
+
+          <div class="methodology-list">
+            <div>
+              <h3>1. Data Integration</h3>
+              <p>
+                Combined production test data with equipment inventory records
+                to associate producing wells with installed motor class
+                information.
+              </p>
+            </div>
+
+            <div>
+              <h3>2. SQL Transformation</h3>
+              <p>
+                Developed custom SQL logic to clean, join, and structure
+                well-level production and equipment data for analysis.
+              </p>
+            </div>
+
+            <div>
+              <h3>3. Statistical Classification</h3>
+              <p>
+                Applied distribution-based classification logic to identify
+                wells operating outside typical production ranges for their
+                installed motor class.
+              </p>
+            </div>
+
+            <div>
+              <h3>4. Dashboard Development</h3>
+              <p>
+                Built a Tableau dashboard to visualize production distributions,
+                compare motor classes, and support screening-level engineering
+                review.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Dashboard Views</h2>
+            <div class="title-line"></div>
+          </div>
+          <figure class="dashboard-showcase">
+            <div class="image-wrapper">
+              <img
+                src="filtered_motor_dashboard.png"
+                alt="Production Distribution by Motor Class"
+              />
+
+              <div class="tooltip-overlay-card">
+                <img
+                  src="tooltip_example.png"
+                  alt="Well-level Tooltip Detail"
+                />
+                <p>Well-level Tooltip Detail</p>
+              </div>
+            </div>
+            <figcaption>Production Distribution by Motor Class</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Key Findings</h2>
+            <ul class="project-bullets">
+              <li>
+                Significant production overlap existed between motor classes,
+                indicating production alone is insufficient for motor sizing.
+              </li>
+              <li>
+                Larger motor classes exhibited substantially greater production
+                variability and operational spread.
+              </li>
+              <li>
+                Statistical review classifications identified wells exhibiting
+                atypical utilization behaviour relative to comparable motor
+                classes.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Engineering Limitations</h2>
+            <p>
+              Rod string loading, stroke speed and length, well depth and
+              geometry, and downhole pump configuration all heavily influence
+              motor power requirements. These variables were excluded from this
+              analysis because the dashboard was intended as a screening tool to
+              narrow the total number of wells requiring further engineering
+              analysis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Validation Case Study</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="case-study-card">
+            <h3>Motor Downsizing Impact</h3>
+
+            <h4>Objective</h4>
+            <p>
+              To evaluate whether motor sizing optimization opportunities
+              identified through production analytics could translate into
+              measurable reductions in power consumption, three wells that
+              underwent motor downsizing from 40 HP to 20 HP were analyzed.
+            </p>
+
+            <h4>Methodology</h4>
+            <p>
+              Three potential oversizing candidates were evaluated and had their
+              40 HP motors swapped with 20 HP motors in August 2025. To compare
+              power consumption before and after the swaps, load profiles were
+              created for each well. These included daily energy consumption
+              throughout the year, an average hourly consumption profile, and a
+              smoothed demand and consumption chart. Cost savings were estimated
+              using an assumed electricity consumption rate for comparison
+              purposes.
+            </p>
+
+            <h4>Results</h4>
+
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Well</th>
+                  <th>Before<br />(kWh/day)</th>
+                  <th>After<br />(kWh/day)</th>
+                  <th>Savings<br />(kWh/day)</th>
+                  <th>Savings<br />(%)</th>
+                  <th>Annual Savings<br />(kWh)</th>
+                  <th>Annual Cost Savings</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>A</td>
+                  <td>467.4</td>
+                  <td>425.7</td>
+                  <td>41.7</td>
+                  <td>8.9%</td>
+                  <td>15,224</td>
+                  <td>$1,134</td>
+                </tr>
+
+                <tr>
+                  <td>B</td>
+                  <td>189.9</td>
+                  <td>76.5</td>
+                  <td>113.4</td>
+                  <td>59.7%</td>
+                  <td>41,379</td>
+                  <td>$3,083</td>
+                </tr>
+
+                <tr>
+                  <td>C</td>
+                  <td>217.9</td>
+                  <td>198.7</td>
+                  <td>19.2</td>
+                  <td>8.8%</td>
+                  <td>7,011</td>
+                  <td>$522</td>
+                </tr>
+
+                <tr>
+                  <td><strong>Average</strong></td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td><strong>58.1</strong></td>
+                  <td><strong>25.8%</strong></td>
+                  <td><strong>21,205</strong></td>
+                  <td><strong>$1,580</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4>Validation Visuals</h4>
+
+            <div class="case-study-gallery">
+              <figure>
+                <img
+                  src="dataset_3_daily_consumption_indexed.png"
+                  alt="Daily Energy Consumption Before and After Motor Replacement"
+                />
+                <figcaption>
+                  Daily Energy Consumption Before and After Motor Replacement
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="annual_cost_savings.png"
+                  alt="Annual cost savings by well"
+                />
+                <figcaption>Annual Cost Savings by Well</figcaption>
+              </figure>
+
+              <figure>
+                <img
+                  src="dataset_3_hourly_profile_indexed.png"
+                  alt="Average Hourly Load Profile"
+                />
+                <figcaption>Average Hourly Load Profile</figcaption>
+              </figure>
+            </div>
+
+            <h4>Discussion</h4>
+
+            <p>
+              The observed results demonstrated that motor downsizing can
+              significantly reduce electrical consumption when existing
+              installations are oversized relative to operating requirements.
+              Although savings varied between wells, all three motor
+              replacements resulted in measurable reductions in energy
+              consumption.
+            </p>
+
+            <ul class="project-bullets">
+              <li>
+                Approximately 60% reduction in daily energy usage in the largest
+                observed case.
+              </li>
+              <li>
+                Approximately 41 MWh of annual energy savings in the largest
+                observed case.
+              </li>
+              <li>
+                Approximately $3,000 in annual operating cost reduction in the
+                largest observed case.
+              </li>
+            </ul>
+            <p></p>
+            <p>
+              These results support the use of production-based analytics as a
+              screening tool for identifying motor optimization opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Recommendations</h2>
+            <ul class="project-bullets">
+              <li>
+                Wells identified as potential oversized candidates should
+                undergo detailed mechanical review.
+              </li>
+              <li>
+                Further review should include rod loading, stroke-speed
+                analysis, and downhole equipment evaluation.
+              </li>
+              <li>
+                Future optimization work could incorporate downhole loading
+                models to improve sizing recommendations.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Technical Stack</h2>
+
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Tool</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>SQL</td>
+                  <td>Data extraction and transformation</td>
+                </tr>
+
+                <tr>
+                  <td>Tableau</td>
+                  <td>Statistical visualization and dashboarding</td>
+                </tr>
+
+                <tr>
+                  <td>Statistical Analysis</td>
+                  <td>Distribution and anomaly identification</td>
+                </tr>
+
+                <tr>
+                  <td>Engineering Analytics</td>
+                  <td>Utilization classification logic</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="data-disclaimer">
+            <h2>Data Disclaimer</h2>
+
+            <p>
+              Operational data shown in this project has been hidden,
+              anonymized, or modified for portfolio presentation purposes.
+              Engineering relationships, implementation approach, and technical
+              methodology were preserved while removing proprietary operational
+              details.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2026 Addison Wiens. All rights reserved. All confidential project
+          data anonymized with synthetic, modified, or indexed data.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

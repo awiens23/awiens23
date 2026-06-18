@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Pumpjack Kinematic Modeling and Geometry Optimization | Addison Wiens
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <h1 class="logo">Addison Wiens</h1>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <a href="projects.html" class="back-link">← Back to Projects</a>
+
+          <p class="hero-subtitle">Mechanical Design Project</p>
+
+          <h2>Pumpjack Kinematic Modeling and Geometry Optimization</h2>
+
+          <p class="project-summary">
+            Developed a CAD and MATLAB-based workflow to model the kinematics of
+            an HG bent-pumpjack, analyze stroke-length behaviour, and determine
+            the geometry required to model a HG 456-256-144 unit with 144",
+            120", and 100" stroke lengths.
+          </p>
+
+          <p class="project-summary">
+            The project combined mechanical design, linkage analysis, kinematic
+            simulation, and geometry optimization to transition from an
+            approximate CAD model to a kinematically calibrated pumpjack model.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="project-feature-image-small">
+            <img src="big_iso.png" alt="Final optimized pumpjack CAD model" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Problem Statement</h2>
+
+            <p>
+              Pumpjacks convert rotational motion into reciprocating motion
+              through a complex linkage system. Although standard stroke lengths
+              such as 144", 120", and 100" are commonly referenced, the
+              relationship between geometry, crank radius, and resulting stroke
+              length is not immediately obvious.
+            </p>
+
+            <p>
+              The objective was to develop a representative HG bent-pumpjack
+              model and determine how system geometry influences stroke length
+              and kinematic response.
+            </p>
+          </div>
+
+          <div>
+            <h2>Objective</h2>
+
+            <p>
+              Build a CAD and simulation workflow capable of modeling pumpjack
+              kinematics, evaluating system response, and determining the
+              dimensions required to achieve specific target stroke lengths.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Engineering Workflow</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="methodology-image">
+            <img
+              src="pumpjack_workflow.png"
+              alt="Pumpjack engineering workflow"
+            />
+          </div>
+
+          <div class="methodology-list">
+            <div>
+              <h3>1. Concept Sketching</h3>
+
+              <p>
+                Created right-side and isometric sketches of an HG Bent pumpjack
+                to understand component relationships and overall geometry.
+              </p>
+            </div>
+
+            <div>
+              <h3>2. Initial CAD Model</h3>
+
+              <p>
+                Developed a first-pass CAD model using dimensions estimated from
+                photographs and publicly available reference material.
+              </p>
+            </div>
+
+            <div>
+              <h3>3. MATLAB Kinematic Model</h3>
+
+              <p>
+                Extracted geometry from the CAD model and developed a MATLAB
+                simulation to evaluate linkage motion throughout a complete 360°
+                rotation.
+              </p>
+            </div>
+
+            <div>
+              <h3>4. Optimization & Redesign</h3>
+
+              <p>
+                Used simulation results to determine the scaling and geometry
+                changes required to achieve target stroke lengths.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Initial Design</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="reference-chart-gallery">
+            <figure>
+              <img src="init_jack_right.png" alt="Pumpjack concept sketches" />
+
+              <figcaption>Initial right-side sketch</figcaption>
+            </figure>
+
+            <figure>
+              <img src="init_jack_iso.png" alt="Pumpjack concept sketches" />
+              <figcaption>Initial isometric sketch</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Initial Model</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="reference-chart-gallery">
+            <figure>
+              <img src="small_iso.png" alt="Initial CAD model" />
+              <figcaption>
+                First CAD model based on estimated dimensions
+              </figcaption>
+            </figure>
+
+            <figure class="dashboard-large-card-pumpjack">
+              <img src="little_jack_move.gif" alt="Initial CAD model moving" />
+              <figcaption>Original CAD model motion study</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Kinematic Modeling</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="kinematics-gallery">
+            <figure>
+              <img src="pumpjack.gif" alt="Pumpjack linkage animation" />
+
+              <figcaption>
+                Simulated linkage motion over two full crank rotations.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="strokelength_pos.png"
+                alt="Stroke length system response"
+              />
+
+              <figcaption>
+                Stroke-length response generated from the MATLAB model
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Optimization Analysis</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <p class="project-summary">
+            Parametric studies were performed using the MATLAB model to quantify
+            how pumpjack geometry influences stroke length. These investigations
+            were used to identify limitations of the initial design and
+            determine the geometric modifications required to achieve target
+            stroke lengths.
+          </p>
+
+          <div class="optimization-gallery">
+            <figure>
+              <img
+                src="scale_factor.png"
+                alt="Stroke length versus geometry scale factor"
+              />
+
+              <figcaption>
+                Stroke length as a function of overall geometry scale factor.
+                The relationship was used to determine the approximate scaling
+                required to achieve target pumpjack dimensions.
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="scaling_issues.png"
+                alt="Stroke length versus crank radius"
+              />
+
+              <figcaption>
+                Stroke length versus crank radius. The analysis highlighted
+                geometric limitations of the original design and demonstrated
+                how crank radius constrains achievable stroke length.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Model Validation</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <p class="project-summary">
+            To validate the optimized geometry, the redesigned linkage was run
+            back through the MATLAB kinematic model and compared against the
+            expected stroke-length behaviour. This confirmed that the updated
+            geometry produced the intended pumpjack motion and provided a check
+            against the CAD redesign.
+          </p>
+
+          <div class="kinematics-gallery">
+            <figure>
+              <img
+                src="pumpjack_144in.gif"
+                alt="Optimized pumpjack linkage validation animation"
+              />
+
+              <figcaption>
+                Optimized linkage motion generated from the MATLAB validation
+                model
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="optimized_strokelength.png"
+                alt="Optimized stroke length response"
+              />
+
+              <figcaption>
+                Stroke-length response of the optimized linkage geometry
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Optimization Results</h2>
+
+            <p>
+              The MATLAB model was expanded to investigate the relationship
+              between geometry and stroke length.
+            </p>
+
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Stroke Position</th>
+                  <th>100"</th>
+                  <th>120"</th>
+                  <th>144"</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Initial Design</strong></td>
+                  <td>11.6"</td>
+                  <td>26.9"</td>
+                  <td>42.4"</td>
+                </tr>
+                <tr>
+                  <td><strong>Optimized Design</strong></td>
+                  <td>99.4"</td>
+                  <td>120.5"</td>
+                  <td>144.1"</td>
+                </tr>
+                <tr>
+                  <td><strong>Error</strong></td>
+                  <td>0.6"</td>
+                  <td>0.5"</td>
+                  <td>0.1"</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="metrics-row-pumpjack">
+              <div class="metric-card-pumpjack">
+                <h3>3 / 3</h3>
+                <p>Targets Achieved</p>
+              </div>
+
+              <div class="metric-card-pumpjack">
+                <h3>0.6"</h3>
+                <p>Maximum Error</p>
+              </div>
+
+              <div class="metric-card-pumpjack">
+                <h3>3.4×</h3>
+                <p>Scale Factor</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2>Key Findings</h2>
+
+            <ul class="project-bullets">
+              <li>
+                Parametric analysis indicated that the original geometry
+                required approximately a 3.4× scale factor to achieve a 144-inch
+                stroke.
+              </li>
+              <li>
+                Crank radius was identified as a primary driver of stroke length
+                and established a practical upper limit on achievable stroke.
+              </li>
+              <li>
+                Stroke length is strongly influenced by crank radius and linkage
+                geometry.
+              </li>
+              <li>
+                The crank design needed to be adjusted to reflect the proper
+                scale factor.
+              </li>
+              <li>
+                The initial CAD model provided a useful basis for developing a
+                representative kinematic model.
+              </li>
+              <li>
+                Simulation enabled design modifications prior to rebuilding the
+                CAD model.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Final Optimized Design</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="dashboard-showcase">
+            <figure class="dashboard-large-card-pumpjack">
+              <img src="big_jack_move.gif" alt="Final optimized CAD model" />
+
+              <figcaption>
+                Final CAD model incorporating geometry required to achieve 144",
+                120", and 100" stroke lengths.
+              </figcaption>
+            </figure>
+
+            <div class="project-note">
+              <h3>Model Limitations & Future Work</h3>
+
+              <p>
+                While the optimized geometry successfully achieved the target
+                stroke lengths, the resulting model does not fully represent the
+                proportions and dimensional relationships of a production
+                pumpjack. The optimization process prioritized establishing the
+                kinematic relationships required to achieve the desired stroke
+                lengths rather than preserving realistic component sizing or
+                manufacturable geometry.
+              </p>
+
+              <p>
+                As a result, several dimensions were scaled beyond what would
+                typically be observed in an actual HG pumpjack. For the purposes
+                of this study, the model served as a representative mechanism
+                for investigating linkage behaviour, stroke-length response, and
+                geometric sensitivity.
+              </p>
+
+              <p>
+                A logical next step would be to perform a constrained
+                optimization that preserves realistic pumpjack proportions while
+                maintaining the kinematic relationships required to achieve the
+                target stroke lengths. This would enable the development of a
+                dimensionally accurate and mechanically representative model
+                suitable for further design and analysis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Technical Skills Demonstrated</h2>
+
+            <ul class="project-bullets">
+              <li>Mechanical design</li>
+              <li>Linkage kinematics</li>
+              <li>CAD modeling</li>
+              <li>MATLAB simulation</li>
+              <li>Engineering optimization</li>
+              <li>Parametric analysis</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Technical Stack</h2>
+
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Tool</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Autodesk Fusion</td>
+                  <td>CAD modeling and geometry development</td>
+                </tr>
+
+                <tr>
+                  <td>MATLAB</td>
+                  <td>Kinematic modeling and optimization</td>
+                </tr>
+
+                <tr>
+                  <td>Engineering Sketching</td>
+                  <td>Concept development and system understanding</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2026 Addison Wiens. All rights reserved. All confidential project
+          data anonymized with synthetic, modified, or indexed data.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

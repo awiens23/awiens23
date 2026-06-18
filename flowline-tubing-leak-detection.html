@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flowline-Based Tubing Leak Diagnostic Tool | Addison Wiens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <h1 class="logo">Addison Wiens</h1>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <a href="projects.html" class="back-link">← Back to Projects</a>
+
+          <p class="hero-subtitle">Production Engineering Project</p>
+
+          <h2>Flowline-Based Tubing Leak Diagnostic Tool</h2>
+
+          <p class="project-summary">
+            Developed an engineering decision-support tool to evaluate the
+            feasibility of using existing battery flowline pressure for tubing
+            leak diagnosis in downed wells. The project combined fluid flow
+            modeling, tubing volume calculations, economic analysis, and
+            calculator development to estimate tubing fill times and support
+            field implementation.
+          </p>
+
+          <p class="project-summary">
+            By replacing conventional pressure truck testing with a
+            flowline-based testing method, the analysis suggested potential
+            annual cost reductions of up to 80% while maintaining diagnostic
+            capability.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Problem Statement</h2>
+            <p>
+              Tubing leak diagnosis in downed wells was traditionally performed
+              using pressure trucks at an average cost of approximately $1,000
+              per test. In previous years, pressure testing expenditures
+              exceeded $500,000.
+            </p>
+
+            <p>
+              An alternative field method involved shutting in the battery
+              groupline and using existing line pressure to fill the tubing
+              string. If the tubing failed to fill or pressure decayed
+              unexpectedly, a tubing leak could be inferred.
+            </p>
+          </div>
+
+          <div>
+            <h2>Objective</h2>
+            <p>
+              Determine whether existing battery flowline pressure could be used
+              as a practical alternative to conventional pressure truck testing
+              by estimating expected tubing fill times under representative
+              operating conditions.
+            </p>
+
+            <p>
+              Establishing a reliable fill-time reference would allow operators
+              to distinguish between normal fill behavior and potential tubing
+              failures while reducing pressure testing costs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Engineering Investigation</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="methodology-list">
+            <div>
+              <h3>1. Production System Characterization</h3>
+              <p>
+                Battery-level operating variables were collected, including
+                water cut, line pressure, and average daily production rate.
+                These variables were used to estimate available flow conditions
+                and oil displacement during testing.
+              </p>
+            </div>
+
+            <div>
+              <h3>2. Tubing Volume Modeling</h3>
+              <p>
+                Reference tables were developed using standard tubing and rod
+                dimensions to calculate the annular volume between the tubing
+                string and rod string.
+              </p>
+            </div>
+
+            <div>
+              <h3>3. Flow Modeling</h3>
+              <p>
+                Average production rates from representative batteries were used
+                to estimate field-average flow rates and expected tubing fill
+                times.
+              </p>
+            </div>
+
+            <div>
+              <h3>4. Economic Evaluation</h3>
+              <p>
+                Conventional pressure truck testing costs were compared against
+                the estimated costs of a flowline-based testing method to
+                evaluate potential operating expense reductions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>System Model & Key Calculations</h2>
+            <div class="title-line"></div>
+          </div>
+          <div class="system-model-grid">
+            <figure class="model-card">
+              <table class="tech-table">
+                <thead>
+                  <tr>
+                    <th>Battery</th>
+                    <th>Water Cut</th>
+                    <th>Pressure</th>
+                    <th>Relative Daily Production</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>A</td>
+                    <td>92%</td>
+                    <td>150 psi</td>
+                    <td>120 m³</td>
+                  </tr>
+                  <tr>
+                    <td>B</td>
+                    <td>85%</td>
+                    <td>125 psi</td>
+                    <td>500 m³</td>
+                  </tr>
+                  <tr>
+                    <td>C</td>
+                    <td>79%</td>
+                    <td>105 psi</td>
+                    <td>160 m³</td>
+                  </tr>
+                  <tr>
+                    <td>D</td>
+                    <td>88%</td>
+                    <td>115 psi</td>
+                    <td>450 m³</td>
+                  </tr>
+                </tbody>
+              </table>
+              <figcaption>Table 1 – Battery Operating Conditions</figcaption>
+            </figure>
+            <figure class="model-card model-diagram-card">
+              <img
+                src="rod_string_reference.png"
+                alt="Representative tubing and rod geometry model"
+              />
+              <figcaption>
+                Representative tubing and rod geometry model
+              </figcaption>
+            </figure>
+          </div>
+          <div class="results-highlight">
+            <div class="metric-card">
+              <h3>3.91 m³</h3>
+              <p>Total Annular Volume</p>
+            </div>
+            <div class="metric-card">
+              <h3>12.95 m³/hr</h3>
+              <p>Average Flow Rate</p>
+            </div>
+            <div class="metric-card">
+              <h3>18 min</h3>
+              <p>Estimated Tubing Fill Time</p>
+            </div>
+            <div class="metric-card">
+              <h3>$205</h3>
+              <p>Estimated Product Loss per Test</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Flow Modeling Results</h2>
+            <table class="tech-table">
+              <tbody>
+                <tr>
+                  <td>Average Production Rate</td>
+                  <td>310.85 m³/day</td>
+                </tr>
+
+                <tr>
+                  <td>Average Flow Rate</td>
+                  <td>12.95 m³/hour</td>
+                </tr>
+
+                <tr>
+                  <td>Estimated Fill Time</td>
+                  <td>18 minutes</td>
+                </tr>
+
+                <tr>
+                  <td>Average Water Cut</td>
+                  <td>86.1%</td>
+                </tr>
+
+                <tr>
+                  <td>Estimated Oil Displacement</td>
+                  <td>0.54 m³</td>
+                </tr>
+
+                <tr>
+                  <td>Estimated Product Loss</td>
+                  <td>$205 per test</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h2>Economic Analysis</h2>
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Scenario</th>
+                  <th>Annual Cost</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Pressure Truck Testing</td>
+                  <td>Over $500,000</td>
+                </tr>
+
+                <tr>
+                  <td>Flowline-Based Testing</td>
+                  <td>$120,000</td>
+                </tr>
+
+                <tr>
+                  <td><strong>Estimated Reduction</strong></td>
+                  <td><strong>80%</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>
+              Even partial adoption of the method on one-third of annual tests
+              would reduce operating expenditures by more than $150,000
+              annually.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Calculator Development</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="calculator-grid">
+            <div class="case-study-card calculator-card">
+              <h3>Basic Calculator</h3>
+
+              <p>
+                The first calculator was designed as a rapid screening tool
+                requiring only line pressure, line diameter, and measured depth.
+              </p>
+
+              <ul class="project-bullets">
+                <li>Flow velocity</li>
+                <li>Volumetric flow rate</li>
+                <li>Annular volume</li>
+                <li>Tubing fill time</li>
+                <li>Estimated oil displacement</li>
+              </ul>
+
+              <div class="calculator-image">
+                <img
+                  src="basic_calculator.png"
+                  alt="Basic tubing leak detection calculator"
+                />
+              </div>
+            </div>
+
+            <div class="case-study-card calculator-card">
+              <h3>Advanced Calculator</h3>
+
+              <p>
+                A second version was developed to improve flexibility and
+                accuracy by allowing users to specify fluid properties and
+                completion geometry.
+              </p>
+
+              <ul class="project-bullets">
+                <li>Inflow and outflow pressure</li>
+                <li>Relative density and water cut</li>
+                <li>Multiple tubing sizes</li>
+                <li>Fiberglass and steel rod configurations</li>
+                <li>Testing cost estimate</li>
+              </ul>
+
+              <div class="calculator-image">
+                <img
+                  src="advanced_calculator.png"
+                  alt="Advanced tubing leak detection calculator"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Field Reference Charts</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <p class="project-summary">
+            Calculator outputs were used to generate field reference charts for
+            1.5", 1.75", and 2.0" flowlines. These charts provide expected
+            tubing fill times as a function of well depth and line pressure,
+            allowing operators to quickly estimate expected fill times without
+            performing calculations in the field.
+          </p>
+
+          <div class="reference-chart-gallery">
+            <figure>
+              <img
+                src="1-5_Reference_Table.png"
+                alt="1.5 Flowline Reference Chart"
+              />
+              <figcaption>1.5" Flowline Reference Chart</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="1-75_Reference_Table.png"
+                alt="1.75 Flowline Reference Chart"
+              />
+              <figcaption>1.75" Flowline Reference Chart</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="2_Reference_Table.png"
+                alt="2 Flowline Reference Chart"
+              />
+              <figcaption>2" Flowline Reference Chart</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Proposed Validation Strategy</h2>
+
+            <ul class="project-bullets">
+              <li>Select five candidate wells.</li>
+              <li>Install a clamp-on ultrasonic flow meter.</li>
+              <li>Measure actual tubing fill rates.</li>
+              <li>Compare measured results against model predictions.</li>
+              <li>Establish expected operating envelopes.</li>
+              <li>Develop implementation guidelines for field use.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Implementation Considerations</h2>
+
+            <p>
+              Discussions with facilities engineers and a flow meter vendor
+              identified potential measurement challenges associated with
+              multiphase production fluids. Gas entrained within oil-water
+              emulsions can reduce measurement accuracy and repeatability.
+            </p>
+
+            <p>
+              However, the validation objective was not custody-transfer-level
+              accuracy. The goal was to establish practical operating envelopes
+              and reasonable expected fill-time ranges for identifying
+              significant deviations from normal behavior.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Assumptions & Limitations</h2>
+
+            <ul class="project-bullets">
+              <li>Continuity-based flow assumptions.</li>
+              <li>Average battery production rates.</li>
+              <li>Representative production string geometry.</li>
+              <li>Steady-state flow conditions.</li>
+              <li>Limited battery-to-battery variability.</li>
+            </ul>
+
+            <p>
+              Calculated fill times should be interpreted as screening-level
+              estimates rather than exact predictions. Field validation was
+              identified as a critical step prior to implementation.
+            </p>
+          </div>
+
+          <div>
+            <h2>Key Outcomes</h2>
+
+            <ul class="project-bullets">
+              <li>
+                Developed a practical tubing leak diagnostic methodology using
+                existing battery infrastructure.
+              </li>
+              <li>
+                Estimated potential operating cost reductions approaching 80%.
+              </li>
+              <li>Created field-ready calculators and reference charts.</li>
+              <li>
+                Developed a validation strategy suitable for pilot
+                implementation.
+              </li>
+              <li>
+                Combined fluid mechanics, economic analysis, and field
+                operations considerations into a decision-support tool.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Skills Demonstrated</h2>
+
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Engineering</h3>
+                <ul>
+                  <li>Fluid Mechanics</li>
+                  <li>Pressure Systems</li>
+                  <li>Production Engineering</li>
+                  <li>Tubing Design</li>
+                  <li>Volume Calculations</li>
+                </ul>
+              </div>
+
+              <div class="skill-category">
+                <h3>Analysis</h3>
+                <ul>
+                  <li>Economic Evaluation</li>
+                  <li>Cost-Benefit Analysis</li>
+                  <li>Sensitivity Analysis</li>
+                  <li>Engineering Modeling</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2>Technical Stack</h2>
+
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Tool</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Excel</td>
+                  <td>Engineering calculations and calculator development</td>
+                </tr>
+
+                <tr>
+                  <td>Fluid Mechanics</td>
+                  <td>Flow modeling and velocity estimation</td>
+                </tr>
+
+                <tr>
+                  <td>Production Engineering</td>
+                  <td>Tubing and completion analysis</td>
+                </tr>
+
+                <tr>
+                  <td>Economic Analysis</td>
+                  <td>Cost-benefit evaluation</td>
+                </tr>
+
+                <tr>
+                  <td>Technical Documentation</td>
+                  <td>Field implementation planning</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="data-disclaimer">
+            <h2>Data Disclaimer</h2>
+
+            <p>
+              Operational data shown in this project has been hidden,
+              anonymized, or modified for portfolio presentation purposes.
+              Engineering relationships, implementation approach, and technical
+              methodology were preserved while removing proprietary operational
+              details.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2026 Addison Wiens. All rights reserved. All confidential project
+          data anonymized with synthetic, modified, or indexed data.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

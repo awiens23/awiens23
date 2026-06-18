@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sucker Rod Fatigue Calculator | Addison Wiens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <h1 class="logo">Addison Wiens</h1>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <a href="projects.html" class="back-link">← Back to Projects</a>
+
+          <p class="hero-subtitle">Engineering Calculator Project</p>
+
+          <h2>Sucker Rod Fatigue Calculator</h2>
+
+          <p class="project-summary">
+            Developed a rod fatigue calculator to support sucker rod system
+            evaluation by combining manual engineering calculations, automated
+            workflows, and a web-based interface for well-level analysis.
+          </p>
+
+          <p class="project-summary">
+            The tool was designed to improve calculation consistency, reduce
+            manual analysis time, and provide clear visual outputs for
+            evaluating fatigue risk and operating conditions.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="project-feature-image workflow-diagram">
+            <img
+              src="fat_workflow.png"
+              alt="Rodlife fatigue calculator workflow diagram"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Problem Statement</h2>
+            <p>
+              Rod fatigue evaluation can require repeated calculations,
+              well-specific inputs, and interpretation of operating conditions.
+              When performed manually, the process can be time-consuming and
+              prone to inconsistent assumptions between users or wells.
+            </p>
+
+            <p>
+              A more structured tool was needed to standardize fatigue
+              calculations, simplify well-level analysis, and produce outputs
+              that could be reviewed by engineering and operations teams.
+            </p>
+          </div>
+
+          <div>
+            <h2>Objective</h2>
+            <p>
+              Develop an engineering calculator capable of evaluating rod
+              fatigue using a repeatable workflow, with options for manual
+              calculation, automated processing, and a web-based interface for
+              easier field or office use.
+            </p>
+
+            <p>
+              The goal was to create a practical decision-support tool that
+              translated engineering calculations into clear results and visual
+              diagnostics.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Development Workflow</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="methodology-list">
+            <div>
+              <h3>1. Manual Calculator</h3>
+              <p>
+                Built an initial manual calculator to validate the engineering
+                logic, define required inputs, and establish a transparent
+                calculation process.
+              </p>
+            </div>
+
+            <div>
+              <h3>2. Automated Calculator</h3>
+              <p>
+                Developed an automated version to reduce repeated manual work,
+                improve consistency, and streamline well-level analysis.
+              </p>
+            </div>
+
+            <div>
+              <h3>3. Web Interface</h3>
+              <p>
+                Created a web calculator interface to make inputs easier to
+                manage and improve usability for technical review and future
+                deployment.
+              </p>
+            </div>
+
+            <div>
+              <h3>4. Results & Visualization</h3>
+              <p>
+                Generated well-level results and graphs to communicate fatigue
+                behaviour, operating trends, and calculation outputs more
+                clearly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Calculator Evolution</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="reference-chart-gallery">
+            <figure>
+              <a
+                href="manual_fat_calc.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="manual_fat_calc.png"
+                  alt="Manual Rodlife fatigue calculator"
+                />
+              </a>
+
+              <figcaption>
+                Manual calculator used to validate the engineering workflow
+              </figcaption>
+            </figure>
+
+            <figure>
+              <a
+                href="auto_fat_calc.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="auto_fat_calc.png"
+                  alt="Automated Rodlife fatigue calculator"
+                />
+              </a>
+
+              <figcaption>
+                Automated calculator for repeatable well-level analysis
+              </figcaption>
+            </figure>
+
+            <figure>
+              <a
+                href="web_calc_inputs.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="web_calc_inputs.png"
+                  alt="Rodlife web calculator input screen"
+                />
+              </a>
+
+              <figcaption>Web calculator input interface</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Well-Level Results</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="rodlife-results-gallery">
+            <figure>
+              <img
+                src="web_calc_results.png"
+                alt="Rodlife well calculator results"
+              />
+
+              <figcaption>Well calculator result summary</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="web_calc_rod_graphs.png"
+                alt="Rodlife fatigue calculator graphs"
+              />
+
+              <figcaption>
+                Well-level fatigue and operating condition graphs
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Key Features</h2>
+
+            <ul class="project-bullets">
+              <li>
+                Manual calculation workflow for transparent engineering
+                validation.
+              </li>
+              <li>Automated calculator to reduce repeated analysis time.</li>
+              <li>
+                Web-based input form for improved usability and standardization.
+              </li>
+              <li>Well-level result summary for quick engineering review.</li>
+              <li>
+                Graphical outputs to support interpretation of fatigue
+                behaviour.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Calculation Basis</h2>
+
+            <ul class="project-bullets">
+              <li>
+                Inputs: rod string geometry, material grade, loading
+                assumptions, pump speed, and stroke conditions.
+              </li>
+              <li>
+                Outputs: fatigue utilization indicators, operating-condition
+                graphs, and well-level review flags.
+              </li>
+              <li>
+                Limitations: screening-level results intended for engineering
+                review, not final design approval.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="engineering-value-card">
+          <h2>Engineering Value</h2>
+
+          <p>
+            The calculator provides a repeatable method for evaluating rod
+            fatigue and communicating well-level results. By moving from manual
+            calculations to automated and web-based tools, the workflow became
+            more consistent, easier to review, and better suited for repeated
+            engineering use.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Future Development</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="project-note">
+            <p>
+              Future versions of the sucker rod fatigue workflow could expand
+              the model beyond its current analysis capabilities by
+              incorporating additional service-factor modifiers. These modifiers
+              could account for operating conditions such as loading severity,
+              corrosion environment, material condition, pump speed, or other
+              field-specific factors that influence fatigue life.
+            </p>
+
+            <p>
+              Another major improvement would be the addition of a direct SQL
+              database connection. Once more robust data-cleaning pipelines are
+              established, the workflow could automatically pull cleaned well,
+              rod-string, and operating data from a database rather than relying
+              on manually prepared input files.
+            </p>
+
+            <p>
+              These additions would make the tool more scalable, reduce manual
+              data handling, and support a more automated fatigue-screening
+              workflow for evaluating rod-string performance across a larger
+              number of wells.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Technical Stack</h2>
+
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Tool / Area</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Engineering Calculations</td>
+                  <td>Rod fatigue evaluation and calculation logic</td>
+                </tr>
+
+                <tr>
+                  <td>Excel / Manual Calculator</td>
+                  <td>
+                    Initial workflow validation and transparent calculations
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Automation</td>
+                  <td>Repeatable well-level calculation processing</td>
+                </tr>
+
+                <tr>
+                  <td>Web Calculator</td>
+                  <td>User input management and calculation interface</td>
+                </tr>
+
+                <tr>
+                  <td>Data Visualization</td>
+                  <td>
+                    Result summaries and engineering interpretation graphs
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h2>Skills Demonstrated</h2>
+
+            <ul class="project-bullets">
+              <li>Engineering calculator development.</li>
+              <li>Mechanical system analysis.</li>
+              <li>Workflow automation.</li>
+              <li>Technical visualization.</li>
+              <li>Decision-support tool design.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="data-disclaimer">
+            <h2>Data Disclaimer</h2>
+
+            <p>
+              Operational data shown in this project has been hidden,
+              anonymized, or modified for portfolio presentation purposes.
+              Engineering relationships, implementation approach, and technical
+              methodology were preserved while removing proprietary operational
+              details.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2026 Addison Wiens. All rights reserved. All confidential project
+          data anonymized with synthetic, modified, or indexed data.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

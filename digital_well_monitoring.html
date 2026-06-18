@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Digital Well Monitoring Platform Deployment | Addison Wiens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <h1 class="logo">Addison Wiens</h1>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <a href="projects.html" class="back-link">← Back to Projects</a>
+
+          <p class="hero-subtitle">Digital Field Systems Project</p>
+
+          <h2>Digital Well Monitoring Platform Deployment and Optimization</h2>
+
+          <p class="project-summary">
+            Implemented and scaled a real-time well monitoring platform across
+            hundreds of producing wells by characterizing software
+            functionality, automating deployment workflows, and developing
+            operational best practices.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Monitoring Dashboard Example</h2>
+          <div class="project-feature-image">
+            <img
+              src="uedit_dashboard.png"
+              alt="Digital well monitoring dashboard"
+            />
+          </div>
+
+          <p class="image-note">
+            <em>Well data and information hidden for confidentiality.</em>
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Executive Summary</h2>
+
+            <p>
+              A new well monitoring platform was introduced to improve
+              production surveillance and remote diagnostics across producing
+              wells. Documentation was limited, implementation procedures did
+              not exist, and software behaviour varied across multiple firmware
+              versions.
+            </p>
+
+            <p>
+              I led the evaluation and deployment effort by mapping
+              functionality across eight firmware versions, developing automated
+              configuration tools, creating production monitoring programs, and
+              establishing internal deployment standards.
+            </p>
+          </div>
+
+          <div>
+            <h2>Problem Statement</h2>
+
+            <p>
+              The organization was introducing a new production monitoring
+              platform capable of collecting and visualizing real-time well
+              data. However, several barriers prevented field-wide
+              implementation.
+            </p>
+
+            <ul class="project-bullets">
+              <li>Documentation was limited.</li>
+              <li>Firmware behavior was not fully understood.</li>
+              <li>Standardized deployment procedures did not exist.</li>
+              <li>
+                Large-scale well configuration was impractical using manual
+                methods.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Engineering Challenge</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="project-detail-grid">
+            <div class="case-study-card">
+              <h3>Technical Questions</h3>
+
+              <ul class="project-bullets">
+                <li>How does the software communicate with field equipment?</li>
+                <li>What capabilities exist in each firmware version?</li>
+                <li>How should wells be configured?</li>
+                <li>What data can be collected and visualized?</li>
+              </ul>
+            </div>
+
+            <div class="case-study-card">
+              <h3>Deployment Questions</h3>
+
+              <ul class="project-bullets">
+                <li>How can hundreds of wells be configured efficiently?</li>
+                <li>How can deployment procedures be standardized?</li>
+                <li>
+                  How can the platform be transitioned from pilot use to
+                  standard practice?
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Configuration Standardization</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="project-detail-grid">
+            <div>
+              <h2>Challenge</h2>
+
+              <p>
+                The monitoring platform existed across eight firmware versions
+                that were functionally similar but required version-specific
+                project files and data recorder configurations. Wells throughout
+                the field could be operating on any firmware version, with no
+                consistent relationship between firmware version, well type, or
+                geographic location.
+              </p>
+
+              <p>
+                As a result, large-scale deployment required identifying the
+                appropriate configuration files for each well and ensuring
+                compatibility between firmware, project files, and data recorder
+                settings.
+              </p>
+            </div>
+
+            <div>
+              <h2>Investigation</h2>
+
+              <ul class="project-bullets">
+                <li>
+                  Identified configuration requirements for all eight firmware
+                  versions.
+                </li>
+                <li>Documented project file and data recorder dependencies.</li>
+                <li>Developed version-specific deployment procedures.</li>
+                <li>
+                  Established standardized workflows for selecting and applying
+                  configurations.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-feature-image workflow">
+            <img
+              src="uedit_workflow.png"
+              alt="Project workflow from data to automation to deployment"
+            />
+          </div>
+
+          <div class="case-study-card">
+            <h3>Outcome</h3>
+
+            <p>
+              The resulting documentation and workflows eliminated
+              trial-and-error deployment, reduced configuration errors, and
+              enabled scalable implementation across hundreds of wells.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Deployment Automation</h2>
+
+            <p>
+              The absence of standardized deployment procedures created a
+              significant administrative burden when configuring wells for the
+              monitoring platform. In addition to generating connection
+              profiles, each well required compatibility with the correct
+              firmware-specific project and data recorder files.
+            </p>
+
+            <p>
+              To address this, I developed Python-based automation tools that
+              generated and populated more than 500 well connection profiles
+              while supporting version-specific configuration requirements.
+            </p>
+          </div>
+
+          <div class="deployment-metrics">
+            <div class="deployment-metric-card">
+              <h3>8</h3>
+              <p>Firmware Versions Mapped</p>
+            </div>
+
+            <div class="deployment-metric-card">
+              <h3>500+</h3>
+              <p>Well Connection Profiles Automated</p>
+            </div>
+
+            <div class="deployment-metric-card">
+              <h3>Field-Wide</h3>
+              <p>Deployment Workflow Standardized</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Data Visualization Development</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="methodology-list">
+            <div>
+              <h3>Live Production Trends</h3>
+
+              <ul class="project-bullets">
+                <li>Production rates</li>
+                <li>Operating pressures</li>
+                <li>Equipment performance</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Dynacard Analysis</h3>
+
+              <ul class="project-bullets">
+                <li>Pump fillage</li>
+                <li>Load behavior</li>
+                <li>Diagnostic indicators</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Example Applications</h3>
+
+              <ul class="project-bullets">
+                <li>Production surveillance</li>
+                <li>Failure diagnosis</li>
+                <li>Optimization reviews</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Operational Use</h3>
+
+              <p>
+                Custom monitoring programs were developed to help engineers
+                identify production changes and equipment behaviour that were
+                difficult to interpret using traditional polling intervals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Dynacard Monitoring Example</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="dashboard-showcase">
+            <figure class="dashboard-large-card">
+              <div class="project-feature-image">
+                <img
+                  src="uedit_dyna.png"
+                  alt="Example surface and downhole dynacards"
+                />
+              </div>
+            </figure>
+          </div>
+
+          <div class="case-study-card">
+            <h3>Diagnostic Value</h3>
+
+            <p>
+              Using the monitoring program, recurring pump-off behaviour could
+              be observed directly from the well data. This type of behaviour
+              can be difficult to identify using traditional SCADA workflows
+              when dynacards are only collected at longer polling intervals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Knowledge Transfer & Adoption</h2>
+
+            <p>
+              Following deployment, internal documentation and training
+              materials were developed to support adoption.
+            </p>
+
+            <ul class="project-bullets">
+              <li>User training</li>
+              <li>Procedure development</li>
+              <li>Troubleshooting documentation</li>
+              <li>Deployment standards</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Adoption Outcome</h2>
+
+            <p>
+              The platform transitioned from a pilot implementation to an
+              operational tool. Deployment procedures, configuration workflows,
+              and training materials supported broader adoption across the team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Technical Outcomes</h2>
+
+            <ul class="project-bullets">
+              <li>Mapped and documented eight firmware versions.</li>
+              <li>Automated 500+ well connection profiles.</li>
+              <li>Established standardized deployment procedures.</li>
+              <li>Developed custom monitoring visualizations.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>Organizational Outcomes</h2>
+
+            <ul class="project-bullets">
+              <li>Reduced deployment effort.</li>
+              <li>Improved software adoption.</li>
+              <li>Enabled real-time production surveillance.</li>
+              <li>Created repeatable workflows for future deployments.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-title">
+            <h2>Technical Skills Demonstrated</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Systems Engineering</h3>
+              <ul>
+                <li>Software integration</li>
+                <li>Communications architecture</li>
+                <li>Digital field systems</li>
+                <li>Configuration management</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Programming</h3>
+              <ul>
+                <li>Python automation</li>
+                <li>Data processing</li>
+                <li>Workflow automation</li>
+                <li>Batch configuration</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Production Engineering</h3>
+              <ul>
+                <li>Dynacard analysis</li>
+                <li>Production surveillance</li>
+                <li>Well optimization</li>
+                <li>Remote diagnostics</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3>Leadership</h3>
+              <ul>
+                <li>Technical training</li>
+                <li>Documentation development</li>
+                <li>Change management</li>
+                <li>Operational implementation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Technical Stack</h2>
+
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Tool / Area</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Python</td>
+                  <td>
+                    Automation of well connection profiles and configuration
+                    workflows
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Digital Well Monitoring Platform</td>
+                  <td>
+                    Real-time production surveillance and remote diagnostics
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Firmware Configuration</td>
+                  <td>Version-specific deployment and compatibility mapping</td>
+                </tr>
+
+                <tr>
+                  <td>Production Engineering</td>
+                  <td>Well performance interpretation and dynacard analysis</td>
+                </tr>
+
+                <tr>
+                  <td>Technical Documentation</td>
+                  <td>
+                    Training, troubleshooting, and implementation standards
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h2>Project Impact</h2>
+
+            <p>
+              This project helped convert a software rollout with limited
+              documentation into a repeatable deployment process supported by
+              automation, standards, and training. The resulting workflow
+              improved scalability and made the monitoring platform practical
+              for use.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="data-disclaimer">
+            <h2>Data Disclaimer</h2>
+
+            <p>
+              Operational data shown in this project has been hidden,
+              anonymized, or modified for portfolio presentation purposes.
+              Engineering relationships, implementation approach, and technical
+              methodology were preserved while removing proprietary operational
+              details.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2026 Addison Wiens. All rights reserved. All confidential project
+          data anonymized with synthetic, modified, or indexed data.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
