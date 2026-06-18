@@ -638,6 +638,10 @@ a:hover {
 
 /* Technical stack table */
 
+.table-wrapper {
+  overflow-x: auto;
+}
+
 .tech-table {
   width: 100%;
   border-collapse: collapse;
@@ -952,6 +956,13 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 768px) {
+  .system-model-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
 .model-card {
   background-color: white;
   border: 1px solid var(--border);
@@ -1044,7 +1055,8 @@ a:hover {
 
 .kinematics-gallery img {
   width: 100%;
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   object-fit: contain;
   display: block;
   background: white;
@@ -1055,6 +1067,16 @@ a:hover {
   margin-top: 0.75rem;
 }
 
+@media (max-width: 768px) {
+  .kinematics-gallery {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .kinematics-gallery img {
+    max-height: none;
+  }
+}
 .dashboard-large-card-pumpjack {
   max-width: 900px;
   margin: 0 auto;
@@ -1080,27 +1102,37 @@ a:hover {
 .optimization-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  margin-top: 2rem;
+  gap: 2rem;
+  align-items: start;
 }
 
 .optimization-gallery figure {
   margin: 0;
-  text-align: center;
 }
 
 .optimization-gallery img {
   width: 100%;
-  max-width: 550px;
   height: auto;
+  max-height: 400px;
+  object-fit: contain;
   display: block;
-  margin: 0 auto 1rem auto;
-  border-radius: 12px;
+  background: white;
 }
 
 .optimization-gallery figcaption {
-  max-width: 550px;
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .kinematics-gallery {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .optimization-gallery img {
+    max-height: none;
+  }
 }
 
 .project-note {
@@ -1178,4 +1210,41 @@ button:focus-visible {
   border-left: 4px solid var(--accent-1);
   border-radius: 12px;
   box-shadow: 0 8px 22px rgba(13, 1, 1, 0.06);
+}
+
+.model-diagram-card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.model-diagram-card img {
+  max-height: 350px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  box-shadow: 0 8px 22px rgba(13, 1, 1, 0.18);
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px);
+  background: var(--accent-text);
 }

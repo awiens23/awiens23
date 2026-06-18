@@ -152,42 +152,44 @@
           </div>
           <div class="system-model-grid">
             <figure class="model-card">
-              <table class="tech-table">
-                <thead>
-                  <tr>
-                    <th>Battery</th>
-                    <th>Water Cut</th>
-                    <th>Pressure</th>
-                    <th>Relative Daily Production</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>A</td>
-                    <td>92%</td>
-                    <td>150 psi</td>
-                    <td>120 m³</td>
-                  </tr>
-                  <tr>
-                    <td>B</td>
-                    <td>85%</td>
-                    <td>125 psi</td>
-                    <td>500 m³</td>
-                  </tr>
-                  <tr>
-                    <td>C</td>
-                    <td>79%</td>
-                    <td>105 psi</td>
-                    <td>160 m³</td>
-                  </tr>
-                  <tr>
-                    <td>D</td>
-                    <td>88%</td>
-                    <td>115 psi</td>
-                    <td>450 m³</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-wrapper">
+                <table class="tech-table">
+                  <thead>
+                    <tr>
+                      <th>Battery</th>
+                      <th>Water Cut</th>
+                      <th>Pressure</th>
+                      <th>Relative Daily Production</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>92%</td>
+                      <td>150 psi</td>
+                      <td>120 m³</td>
+                    </tr>
+                    <tr>
+                      <td>B</td>
+                      <td>85%</td>
+                      <td>125 psi</td>
+                      <td>500 m³</td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>79%</td>
+                      <td>105 psi</td>
+                      <td>160 m³</td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>88%</td>
+                      <td>115 psi</td>
+                      <td>450 m³</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <figcaption>Table 1 – Battery Operating Conditions</figcaption>
             </figure>
             <figure class="model-card model-diagram-card">
@@ -220,72 +222,81 @@
           </div>
         </div>
       </section>
+
       <section class="section section-alt">
         <div class="container project-detail-grid">
           <div>
             <h2>Flow Modeling Results</h2>
-            <table class="tech-table">
-              <tbody>
-                <tr>
-                  <td>Average Production Rate</td>
-                  <td>310.85 m³/day</td>
-                </tr>
+            <div class="table-wrapper">
+              <table class="tech-table">
+                <thead>
+                  <tr>
+                    <th>Calculation</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Average Production Rate</td>
+                    <td>310.85 m³/day</td>
+                  </tr>
 
-                <tr>
-                  <td>Average Flow Rate</td>
-                  <td>12.95 m³/hour</td>
-                </tr>
+                  <tr>
+                    <td>Average Flow Rate</td>
+                    <td>12.95 m³/hour</td>
+                  </tr>
 
-                <tr>
-                  <td>Estimated Fill Time</td>
-                  <td>18 minutes</td>
-                </tr>
+                  <tr>
+                    <td>Estimated Fill Time</td>
+                    <td>18 minutes</td>
+                  </tr>
 
-                <tr>
-                  <td>Average Water Cut</td>
-                  <td>86.1%</td>
-                </tr>
+                  <tr>
+                    <td>Average Water Cut</td>
+                    <td>86.1%</td>
+                  </tr>
 
-                <tr>
-                  <td>Estimated Oil Displacement</td>
-                  <td>0.54 m³</td>
-                </tr>
+                  <tr>
+                    <td>Estimated Oil Displacement</td>
+                    <td>0.54 m³</td>
+                  </tr>
 
-                <tr>
-                  <td>Estimated Product Loss</td>
-                  <td>$205 per test</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                  <tr>
+                    <td>Estimated Product Loss</td>
+                    <td>$205 per test</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-          <div>
-            <h2>Economic Analysis</h2>
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th>Scenario</th>
-                  <th>Annual Cost</th>
-                </tr>
-              </thead>
+            <div>
+              <h2>Economic Analysis</h2>
+              <table class="tech-table">
+                <thead>
+                  <tr>
+                    <th>Scenario</th>
+                    <th>Annual Cost</th>
+                  </tr>
+                </thead>
 
-              <tbody>
-                <tr>
-                  <td>Pressure Truck Testing</td>
-                  <td>Over $500,000</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>Pressure Truck Testing</td>
+                    <td>Over $500,000</td>
+                  </tr>
 
-                <tr>
-                  <td>Flowline-Based Testing</td>
-                  <td>$120,000</td>
-                </tr>
+                  <tr>
+                    <td>Flowline-Based Testing</td>
+                    <td>$120,000</td>
+                  </tr>
 
-                <tr>
-                  <td><strong>Estimated Reduction</strong></td>
-                  <td><strong>80%</strong></td>
-                </tr>
-              </tbody>
-            </table>
+                  <tr>
+                    <td><strong>Estimated Reduction</strong></td>
+                    <td><strong>80%</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <p>
               Even partial adoption of the method on one-third of annual tests
