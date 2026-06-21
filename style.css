@@ -672,6 +672,16 @@ a:hover {
   border-bottom: none;
 }
 
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 /* Mobile */
 
 @media (max-width: 800px) {
