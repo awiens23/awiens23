@@ -474,6 +474,19 @@ a:hover {
   box-shadow: 0 12px 30px rgba(13, 1, 1, 0.08);
 }
 
+.project-feature-image-large {
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.4rem;
+  box-shadow: 0 12px 30px rgba(13, 1, 1, 0.08);
+}
+
+.project-feature-image-large + figcaption {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .project-feature-image-small {
   background-color: white;
   border: 1px solid var(--border);
@@ -485,6 +498,12 @@ a:hover {
 }
 
 .project-feature-image img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.project-feature-image-large img {
   width: 100%;
   display: block;
   border-radius: 12px;
@@ -619,6 +638,30 @@ a:hover {
   background-color: var(--accent-1);
   border-radius: 50%;
 }
+
+.project-bullets-b {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.project-bullets-b li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text);
+}
+
+.project-bullets-b li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-1);
+  border-radius: 50%;
+}
+
 
 /* Case study */
 
@@ -899,6 +942,12 @@ td {
 
 .project-feature-image.workflow {
   max-width: 350px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.project-feature-image-large.workflow {
+  max-width: 500px;
   margin: 2rem auto;
   padding: 2rem;
 }
@@ -1310,4 +1359,33 @@ html {
 .back-to-top:active,
 .back-to-top:link {
   color: #fff;
+}
+
+.features-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-gallery figure {
+  width: 100%;
+  max-width: 900px;
+  margin: 0.2rem auto;
+}
+
+.features-gallery figure img {
+  width: 100%;
+  height: auto;
+}
+
+.features-gallery p {
+  width: 100%;
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+}
+
+.features-gallery .project-bullets-b {
+  width: 100%;
+  max-width: 900px;
+  margin: 0.5rem auto;
 }

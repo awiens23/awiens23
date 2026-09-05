@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Budget Calculator | Addison Wiens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="top">
+    <header class="header">
+      <div class="container nav-container">
+        <h1 class="logo">Addison Wiens</h1>
+
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-hero">
+        <div class="container">
+          <a href="projects.html" class="back-link">← Back to Projects</a>
+
+          <p class="hero-subtitle">Engineering Calculator Project</p>
+
+          <h2>University Budget Calculator</h2>
+
+          <p class="project-summary">
+            A desktop budgeting application I built to help my little sister, a first-year 
+	    univeristy student, to manage discretionary spending throughout the school 
+	    year.
+          </p>
+
+          <p class="project-summary">
+            The goal was to create something simple enough to use regularly while still 
+	    providing enough flexibilty to adjust spending allocations as circumstances 
+	    changed. 
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="project-feature-image-large">
+            <img
+              src="budget_calc_dashboard.png"
+              alt="Budget Calculator Dashboard"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Problem Statement</h2>
+            <p>
+              University students often have a fixed amount of discretionary money but
+	      limited visibility into how much they can comfortably spend each month.
+            </p>
+
+            <p>
+              I wanted to build a tool that could answer questions like:
+	    </p>
+              <ul class="project-bullets">
+	        <li>How much can I spend each month?</li>
+	        <li>How much should go toward each category?</li>
+	        <li>Am I on track with my savings goal?</li>
+	        <li>What happens to my monthly budget if my available funds or timeline
+	        changes?</li>
+              </ul>
+          </div>
+
+          <div>
+            <h2>Objective</h2>
+            <p>
+              Develop a simple, customizable budgeting application that could help a first-
+	      year university student manage discretionary spending, maintain a consistent
+	      monthly savings target, and understand spending trends throughout the school
+	      year. 
+            </p>
+
+            <p>
+              The key objectives were:
+	    </p>
+              <ul class="project-bullets">
+	        <li>Establish a monthly spending budget based on available funds and 
+		savings goals</li>
+	        <li>Allocate spending across customizable categories</li>
+	        <li>Track spending and savings throughout the year</li>
+	        <li>Provide a clear month-by-month view of financial progress</li>
+	        <li>Package the application into an easy-to-use standalone program</li>
+              </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Development Workflow</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="methodology-list">
+            <div>
+              <h3>1. Define Requirements</h3>
+              <p>
+                Identified the user's financial constraints, spending categories, savings 
+		target, and desired timeframe. 
+              </p>
+            </div>
+
+            <div>
+              <h3>2. Design the Budget Model</h3>
+              <p>
+                Developed the underlying calculations for monthly allocations, savings
+		targets, category budgets, and changing timeframes.
+              </p>
+            </div>
+
+            <div>
+              <h3>3. Build the Interface</h3>
+              <p>
+                Implemented the application in Python using CustomTkinter, including the 
+		dashboard, monthly navigation, inputs, and visual summaries. 
+              </p>
+            </div>
+
+            <div>
+              <h3>4. Test & Refine</h3>
+              <p>
+                Tested different budget scenarios and user inputs, resolving issues with ap		application state, validation, navigation, and dynamic layouts.
+              </p>
+            </div>
+
+            <div>
+              <h3>5. Package & Share</h3>
+              <p>
+                Packaged the application with PyInstaller as a standalone Windows .exe, and
+		downloaded it to my sister's laptop with a thumbdrive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Features</h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="features-gallery">
+      <div class="project-feature-image-large">
+      <figure>
+        <img
+          src="budget_calc_dash.png"
+          alt="University Budgeting App dashboard"
+        />
+      </div>
+
+        <figcaption>
+          Dashboard providing an overview of monthly budgets, savings goals,
+          and overall financial progress.
+        </figcaption>
+      </figure>
+
+      
+      <div class="project-feature-image-large">
+      <figure>
+        <img
+          src="budget_calc_month.png"
+          alt="Monthly budget tracking interface"
+        />
+      </div>
+
+        <figcaption>
+          Month-by-month budget tracking with customizable spending
+          categories and allocations.
+        </figcaption>
+      </figure>
+
+
+      <p> Additional features include: </p>
+      <ul class="project-bullets-b">
+        <li>Customizable spending categories and budget allocations</li>
+        <li>Toggleable carryover of unused funds between months</li>
+	<li>Variable timeline settings for flexible budgeting periods</li>
+	<li>Dynamic monthly budget calculations based on savings goals</li>
+	<li>Month-by-month spending and savings tracking</li>
+	<li>Persistent budget data between sessions</li>
+	<li>Standalone Windows application packaged as an .exe</li>
+       </ul>
+
+     </div>
+  </div>
+</section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Future Development</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <ul class="project-bullets">
+            <li>
+              Interactive graphs and charts could provide a clearer visual representation
+	      of spending and savings trends over time.
+            </li>
+            <li>
+            More detailed spending details could help identify changes in spending
+	    patters across categories and months
+            </li>
+            <li>Customizable budget templates could allow users to quickly create
+		budgets for different finanical situations or academic terms.</li>
+            <li>
+              Export functionality could allow users to save budget and spending data for
+	      further analysis or record keeping. 
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container project-detail-grid">
+          <div>
+            <h2>Technical Stack</h2>
+
+            <table class="tech-table">
+              <thead>
+                <tr>
+                  <th>Tool / Area</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Python</td>
+                  <td>Application logic, budget calculations, and data management</td>
+                </tr>
+
+                <tr>
+                  <td>CustomTkinter</td>
+                  <td>
+                    Graphical user interface and interactive application components
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>JSON</td>
+                  <td>Persistent storage of budget settings,categories, and user data</td>
+                </tr>
+
+                <tr>
+                  <td>Object-Oriented Programming</td>
+                  <td>Structured application architecture and resuable functionality</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h2>Skills Demonstrated</h2>
+
+            <ul class="project-bullets">
+              <li>Python application development.</li>
+              <li>Graphical user interface design.</li>
+              <li>Object-oriented programming.</li>
+              <li>Data managment and persistence.</li>
+              <li>Dynamic calculation and logic implementation.</li>
+              <li>User-centered software design.</li>
+              <li>Application testing and deployment.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © 2026 Addison Wiens. All rights reserved. All confidential project
+          data anonymized with synthetic, modified, or indexed data.
+        </p>
+      </div>
+    </footer>
+    <a href="#top" class="back-to-top" aria-label="Back to top"> ↑ </a>
+  </body>
+</html>
